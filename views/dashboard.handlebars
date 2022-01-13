@@ -1,0 +1,18 @@
+{{#if posts.length}}
+<section>
+    <h2>Your Posts</h2>
+    <br />
+    {{#each posts as |post|}}
+    {{> dashboard-post post}}
+    {{/each}}
+</section>
+{{else}}
+<section>
+    <h2>No posts yet!</h2>
+</section>
+{{/if}}
+<div >
+    <button id="new-post-btn" > New Post</button>
+</div>
+
+<script src="/javascript/dashboard.js"></script>
